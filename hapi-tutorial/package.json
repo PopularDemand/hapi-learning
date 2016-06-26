@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hapi": "^13.4.1"
+    "handlebars": "^4.0.5",
+    "hapi": "^13.4.1",
+    "vision": "^4.1.0"
   }
 }
