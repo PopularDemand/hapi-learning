@@ -9,9 +9,17 @@ server.connection({
 
 server.route({
   method: 'GET',
-  path: '/hello',
+  path: '/',
+  handler: function(request, reply){
+    reply('hello')
+  }
+})
+
+server.route({
+  method: 'GET',
+  path: '/users/{userName}',
   handler: function(request, reply) {
-    reply('hello world')
+    reply('Hello, ' + encodeURIComponent(request.params.userName))
   }
 })
 
